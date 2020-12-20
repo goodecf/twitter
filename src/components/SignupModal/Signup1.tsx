@@ -70,6 +70,7 @@ const Signup1 = (props: Props) => {
             placeholder="Name"
             required
             onChange={(e) => updateInputObj(e, 'name')}
+            data-cy="name"
             type="text"
             label="name"
           />
