@@ -47,7 +47,7 @@ describe('Signup1', () => {
   });
 
   it('next btn not disabled after filling all inputs', () => {
-    const nameField = screen.getByLabelText('name');
+    const nameField = screen.getByPlaceholderText('Name');
     const emailField = screen.getByPlaceholderText('Email');
     const monthSelector = screen.getByLabelText('Month');
     const daySelector = screen.getByLabelText('Day');
