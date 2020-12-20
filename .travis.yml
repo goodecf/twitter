@@ -1,5 +1,6 @@
 language: node_js
 
 script:
-  - npm start &
+  - npm install
+  - npm start
   - cypress run --record --key a3a63c2a-c42c-4580-b7e9-0a21ecd9ff62
