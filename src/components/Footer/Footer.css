@@ -1,0 +1,14 @@
+.footer-container {
+  text-align: center;
+}
+
+.footer-ul {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.footer-li {
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
