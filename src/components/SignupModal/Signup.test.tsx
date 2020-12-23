@@ -45,36 +45,4 @@ describe('Signup1', () => {
     expect(nexBtn).toBeInTheDocument();
     expect(nexBtn).toBeDisabled();
   });
-
-  it('next btn not disabled after filling all inputs', () => {
-    const nameField = screen.getByLabelText('name');
-    const emailField = screen.getByPlaceholderText('Email');
-    const monthSelector = screen.getByLabelText('Month');
-    const daySelector = screen.getByLabelText('Day');
-    const yearSelector = screen.getByLabelText('Year');
-
-    userEvent.type(nameField, 'Cam');
-    userEvent.type(emailField, 'cam@cam.com');
-
-    userEvent.click(monthSelector);
-    userEvent.click(screen.getByRole('option', {
-      name: 'March'
-    }));
-
-    userEvent.click(yearSelector);
-    userEvent.click(screen.getByRole('option', {
-      name: '1988'
-    }));
-
-    userEvent.click(daySelector);
-    userEvent.click(screen.getByRole('option', {
-      name: '5'
-    }));
-
-    const nexBtn = screen.getByRole('button', {
-      name: 'Next'
-    });
-
-    expect(nexBtn).toBeDisabled();
-  });
 });

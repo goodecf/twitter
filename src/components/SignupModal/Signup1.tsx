@@ -65,14 +65,12 @@ const Signup1 = (props: Props) => {
         <h3>Create your account</h3>
 
         <SignupForm>
-          <label htmlFor="name" />
           <Form.Input
             placeholder="Name"
             required
             onChange={(e) => updateInputObj(e, 'name')}
             data-cy="name"
             type="text"
-            label="name"
           />
           <Form.Input
             placeholder="Email"

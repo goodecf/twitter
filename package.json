@@ -26,6 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "tsc": "tsc --watch",
+    "cypress-run": "cypress run --record --key a3a63c2a-c42c-4580-b7e9-0a21ecd9ff62",
     "cypress": "cypress open"
   },
   "eslintConfig": {
