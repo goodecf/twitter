@@ -22,11 +22,12 @@ const Signup = (props: Props) => {
     'year': -1,
   });
 
-  const nextPage = () => setPageState(pageState + 1);
+  const nextPage = () => setPageState(() => pageState + 1);
+  const backPage = () => setPageState(() => pageState - 1);
 
   const pages = [
     <Signup1 inputs={inputs} setInputs={setInputs} nextPage={nextPage} />,
-    <Signup2 inputs={inputs} setInputs={setInputs} />
+    <Signup2 inputs={inputs} setInputs={setInputs} backPage={backPage} />
   ];
 
   return (
