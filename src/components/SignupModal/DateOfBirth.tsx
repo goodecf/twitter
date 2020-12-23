@@ -1,16 +1,16 @@
 export const months = [
-  { key: 'jan', text: 'January', value: 'jan' },
-  { key: 'feb', text: 'February', value: 'feb' },
-  { key: 'mar', text: 'March', value: 'mar' },
-  { key: 'apr', text: 'April', value: 'apr' },
-  { key: 'may', text: 'May', value: 'may' },
-  { key: 'jun', text: 'June', value: 'jun' },
-  { key: 'jul', text: 'July', value: 'jul' },
-  { key: 'aug', text: 'August', value: 'aug' },
-  { key: 'sep', text: 'September', value: 'sep' },
-  { key: 'oct', text: 'October', value: 'oct' },
-  { key: 'nov', text: 'November', value: 'nov' },
-  { key: 'dec', text: 'December', value: 'dec' },
+  { key: 'jan', text: 'January', value: 'Jan' },
+  { key: 'feb', text: 'February', value: 'Feb' },
+  { key: 'mar', text: 'March', value: 'Mar' },
+  { key: 'apr', text: 'April', value: 'Apr' },
+  { key: 'may', text: 'May', value: 'May' },
+  { key: 'jun', text: 'June', value: 'Jun' },
+  { key: 'jul', text: 'July', value: 'Jul' },
+  { key: 'aug', text: 'August', value: 'Aug' },
+  { key: 'sep', text: 'September', value: 'Sep' },
+  { key: 'oct', text: 'October', value: 'Oct' },
+  { key: 'nov', text: 'November', value: 'Nov' },
+  { key: 'dec', text: 'December', value: 'Dec' },
 ];
 
 const yearArr = [];

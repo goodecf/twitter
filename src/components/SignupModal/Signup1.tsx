@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEvent } from 'react';
+import React, { ChangeEvent, } from 'react';
 import { Modal, Form, Select } from 'semantic-ui-react'
 
 // @ts-ignore
@@ -8,7 +8,7 @@ import { months, days, years } from './DateOfBirth';
 import {
   ModalHeader,
   NextBtn,
-  Icon,
+  TwitIcon,
   SignupForm,
   TextBold,
   Text,
@@ -49,7 +49,7 @@ const Signup1 = (props: Props) => {
   return (
     <>
       <ModalHeader>
-        <Icon src={TwitterLogo} size="mini" />
+        <TwitIcon src={TwitterLogo} size="mini" />
 
         <NextBtn
           color="twitter"
@@ -69,6 +69,7 @@ const Signup1 = (props: Props) => {
             placeholder="Name"
             required
             onChange={(e) => updateInputObj(e, 'name')}
+            value={props.inputs.name}
             data-cy="name"
             type="text"
           />
@@ -76,6 +77,7 @@ const Signup1 = (props: Props) => {
             placeholder="Email"
             required
             onChange={(e) => updateInputObj(e, 'email')}
+            value={props.inputs.email}
             data-cy="email"
           />
         </SignupForm>
@@ -91,6 +93,7 @@ const Signup1 = (props: Props) => {
           <Form.Field
             control={Select}
             options={months}
+            value={props.inputs.month}
             placeholder="Month"
             onChange={(e: ChangeEvent<HTMLInputElement>, data: object) => updateInputObjDropdown(e, data, 'month')}
             id="Month"
@@ -101,6 +104,7 @@ const Signup1 = (props: Props) => {
           <Form.Field
             control={Select}
             options={days}
+            value={props.inputs.day}
             placeholder="Day"
             onChange={(e: ChangeEvent<HTMLInputElement>, data: object) => updateInputObjDropdown(e, data, 'day')}
             id="Day"
@@ -111,6 +115,7 @@ const Signup1 = (props: Props) => {
           <Form.Field
             control={Select}
             options={years}
+            value={props.inputs.year}
             placeholder="Year"
             onChange={(e: ChangeEvent<HTMLInputElement>, data: object) => updateInputObjDropdown(e, data, 'year')}
             id="Year"
